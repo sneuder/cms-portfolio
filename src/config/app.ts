@@ -1,14 +1,14 @@
 import express from 'express'
-import routerEducation from '../routes/education'
-import routerExperience from '../routes/experience'
-import routerProjects from '../routes/projects'
+import router from '../routes'
+import userRouter from '../routes/user'
+import controller from '../controller'
 
 const startServer = () => {
   const app = express()
 
-  app.use('/education', routerEducation)
-  app.use('/experience', routerExperience)
-  app.use('/projects', routerProjects)
+  app.use('/user', userRouter)
+  app.use('/section', router)
+  app.use('/:item', router)
 
   app.listen(3000, () => {
     console.log('listening...')

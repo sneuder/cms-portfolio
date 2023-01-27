@@ -8,7 +8,7 @@ const startServer = () => {
 
   app.use('/education', routerEducation)
   app.use('/experience', routerExperience)
-  app.use('/education', routerProjects)
+  app.use('/projects', routerProjects)
 
   app.listen(3000, () => {
     console.log('listening...')

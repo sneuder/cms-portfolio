@@ -13,7 +13,7 @@ const startServer = () => {
 
   app.use('/user', userRouter, userController)
   app.use('/section', sectionrouter, sectionController)
-  app.use('/:item', itemRouter, itemController)
+  app.use('/:section', itemRouter, itemController)
 
   app.listen(3000, () => {
     console.log('listening...')

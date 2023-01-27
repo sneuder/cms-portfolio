@@ -2,9 +2,9 @@ import express from 'express'
 
 const router = express.Router()
 
-router.get('/getall')
-router.post('/item')
-router.patch('/:itemId')
-router.delete('/:itemId')
+router.get('/getAll')
+router.post('/newItem')
+router.patch('/:itemId/update')
+router.delete('/:itemId/delete')
 
 export default router

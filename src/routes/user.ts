@@ -2,8 +2,8 @@ import express from 'express'
 
 const router = express.Router()
 
-router.post('/')
-router.patch('/:userId')
-router.delete('/:userId')
+router.post('/newUser')
+router.patch('/:userId/update')
+router.delete('/:userId/delete')
 
 export default router

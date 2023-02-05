@@ -1,7 +1,5 @@
-import dotenv from 'dotenv'
-import startServer from "./config/app";
-import connectDB from './config/db';
+import dotenv from 'dotenv';
+import startServer from './config/app';
 
-dotenv.config()
-startServer()
-connectDB()
+dotenv.config();
+startServer();
